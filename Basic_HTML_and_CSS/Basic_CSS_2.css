@@ -1,0 +1,9 @@
+p {
+	color: snow;
+	background: blue;
+	font-style: bold;
+	text-align: center;
+}
+p {
+	text-shadow: 2px 2px #ff0000;
+}
