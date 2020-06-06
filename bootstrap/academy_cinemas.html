@@ -39,11 +39,12 @@
       </div>
     </nav>
 
-
+    <!--JUMOBTRON-->
     <div class="jumbotron jumbotron-fluid bg-info text-center">
       <div class="container">
         <h1 class="display-4 text-light">Academy Cinemas</h1>
         <p class="lead text-light">Sit back, relax, and enjoy the show...</p>
+        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly deals!</button>
       </div>
     </div>
 
@@ -88,8 +89,50 @@
         <div class="form-group">
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           <button type="submit" class="btn btn-primary">Submit</button>
+
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            SIGN UP!
+          </button>
+
       </form>
   </div>
+  <!-- FORM MODAL -->
+
+
+  <div class="modal" tabindex="-1" id= "register" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">register for movie deals!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Show TIMES! -->
   <div class="row">
     <div class="col-sm">
@@ -177,6 +220,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+
+    <script>
+      $('#element').popover('toggle')
+    </script>
 </body>
 
 </html>
