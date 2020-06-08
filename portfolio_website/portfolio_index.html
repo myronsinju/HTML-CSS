@@ -6,6 +6,8 @@
 		<meta charset="UTF-8">
 		<title>Myron Sinju </title>
 		<link rel="stylesheet" type="text/css" href="./css/portfolio_style.css">
+		<link rel="stylesheet" type="text/css" href="css/portfolio_more.css"
+		<script src="js/portfolio.js" defer></script>
 	</head>
 
 <!-- Body -->
@@ -18,6 +20,15 @@
 		<a href="#GitHub">GitHub</a>
 		<a href="#Contact">Contact</a>
 	</div>
+
+
+	<!--bar -->
+</div>
+
+<!-- This allows us to close the form when we click outside the nav bar or contact form -->
+<div class="btn cancel" onclick="closeForm()">
+
+
 
 <!-- Home -->
 		<br> <!-- Breaks inserted to add space between navbar and first heading -->
@@ -44,6 +55,51 @@
 				</strong>
 			</p> 
 	</div>
+
+
+<!-- Slideshow section -->
+<div id="Slideshow">
+    <div id="Slideshow_Background"> 
+      <div id="Slideshow_Container">
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">1 / 6</div>
+            <img class="Slide_Show_Images" src="img/me.jpg" style="width:100%">
+              <div class="text">I'm available to assist you on your project!</div>
+        </div>
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">2 / 6</div>
+            <img class="Slide_Show_Images" src="img/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+              <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">3 / 6</div>
+            <img class="Slide_Show_Images" src="img/C_Sharp_and_Dot_NET.png" style="width:100%">
+              <div class="text">I have experience in the language C# and dot net framework!</div>
+        </div>
+
+        
+	
+		  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+		
+	  </div>
+  <br>
+
+      <div style="text-align:center">
+ 
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		
+      </div>
+    </div>
+</div>
+
+
+
 
 <!-- About section -->
 	<div class="Row" id="About"> 
